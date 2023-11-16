@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Questions And Answers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div>
+        <h2 class="text-5xl font-bold my-5 text-lime-900">What's the Difference Between Map, Filter, ForEach and Find ?
+        </h2>
+        <div class=" text-3xl"><span class="font-bold text-4xl text-lime-500">Answer:-</span>
+            <p class="my-5"><b class="text-yellow-900">MAP:-</b> When you call map() on an array, it will apply a
+                function you provide <br> to each item in that array and finally return them all as another array.</p>
+
+            <p class="my-5"><b class="text-yellow-900">FILTER:-</b> Filter is similar to same map but here the the item
+                will be placed in the new array <br> if the applied function returns true, otherwise if the function returns
+                false, <br> then the item is not placed in the array.</p>
+            <p class="my-5"><b class="text-yellow-900">ForEach:-</b>
+                JavaScript's for each loop is a quick and easy way to iterate over an array. <br> Used as an alternative to
+                the for loop, it can make code more declarative and easy to read.
+            </p>
+            <p class="my-5"><b class="text-yellow-900">FIND:-</b>
+                Find is when we run the loop and if there are many results according to the condition, <br> it returns the
+                first result that the loop gets.
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="text-5xl font-bold my-8 text-lime-900">What's the Difference Between Local Storage, Session storage
+            and Cookie ?</h2>
+        <div class=" text-3xl"><span class="font-bold text-4xl text-lime-500">Answer:-</span>
+
+            <p class="my-5"><b class="text-yellow-900">Local Storage:-</b>
+                It is a web storage method that helps us store data on the client’s computer in the form of key/value 
+                pairs in a web browser. <br> The data is stored in local storage for a lifetime unless the user manually
+                deletes it from the browser. It does not expire even when the user <br> closes the window or tab. Instead,
+                the data  remains in the browser until and unless the browser's memory is cleared.</p>
+
+            <p class="my-5"><b class="text-yellow-900">Session Storage:-</b>
+                It is very similar to the local storage. Still, the main difference lies in the lifespan as it persists
+                in the browser until its current <br> tab is on. Once you close the tab or terminate it, the data on session
+                storage also gets lost. We can also set and retrieve its data using setItem() <br> and getItem() methods,
+                respectively, similar to the local storage methods.
+            </p>
+
+            <p class="my-5"><b class="text-yellow-900">Cookie:-</b>
+                The only option that was available before HTML5 was introduced was cookies. So, storing data with it is
+                a legacy approach to storing data <br>  on the client machine. It help us store the client-side data to enable
+                a personalized experience for the website’s users.
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="text-5xl font-bold my-8 text-lime-900">What is Event loop ? How it work?</h2>
+        <span class="font-bold text-4xl text-lime-500">Answer:-</span>
+        <p class="text-3xl my-5">
+            The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, <br> the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear <br> again, and repeats the same process. <br>
+            event loop works in a cyclic manner, where it continually checks whether or not the call stack is empty. If it is empty, new functions are added from the event queue. <br> If it is not, then the current function call is processed.
+        </p>
+     </div>
+
+     <div>
+        <h2 class="text-5xl font-bold my-8 text-lime-900">what is the function of quizTime() and chooseQuiz() in noChange js file ?</h2>
+        <span class="font-bold text-4xl text-lime-500">Answer:-</span>
+        <p class="text-3xl my-8"><b class="text-yellow-900 text-4xl">quizTimer():-</b> The <span class="font-bold text-red-700">quizTimer()</span> function basically sets the time with <span class="font-bold text-red-700">setInterval()</span> and then checks repeatedly with condition. <br> The timer will count until the condition is true.  And if the condition is true, the count will stop at <span class="font-bold text-red-700">clearInterval()</span></p>
+
+        <p class="text-3xl my-5"><b class="text-yellow-900 text-4xl">chooseQuiz():-</b>
+            The <span class="font-bold text-red-700">chooseQuiz()</span> function basically checks the quiz answers. Checks if the id of the quiz matches the id of its right answer index. <br> If I select the right answer it will show and if I select the wrong answer it will show and tell the correct answer. Different colors are also set for option, <br> answer select, correct answer and wrong answer.
+        </p>
+     </div> 
+ 
+
+</body>
+
+</html>
